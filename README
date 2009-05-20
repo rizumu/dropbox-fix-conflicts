@@ -1,0 +1,15 @@
+Add the dropbox-fix-conflicts.py script to you bin, so you can execute it from anywhere.
+Explained: http://nixcraft.com/shell-scripting/13025-how-execute-shell-script-any-where.html
+
+
+Example usage:
+Where Movies is the name of the folder in conflict.
+     
+     $ python fixconflicts.py Movies
+
+This is what happens:
+1. If file already exists display error and quit.
+2. Copy each file to the passed in folder name. (ex. Movies) If parent
+    folders do not exist, make the folder tree.
+3. If successful, remove file
+4. After all files are copied successfully, remove the conflict folders.

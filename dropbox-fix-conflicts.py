@@ -31,11 +31,11 @@ def get_files(conflict_folder):
 		
 def move_files(root_folder, pathnames):
 	"""
-	1. copy each file to the passed in folder name.
-		a) create files containing folder tree if necessary
-		b) if file already exists display error and quit
-	2. delete file
-	3. after all files are copied trash any conflict folders
+    1. If file already exists display error and quit.
+    2. Copy each file to the passed in folder name. (ex. Movies) If parent
+        folders do not exist, make the folder tree.
+    3. If successful, remove file
+    4. After all files are copied successfully, remove the conflict folders.
 	"""
 	for pathname in pathnames:
 		source = os.path.join(pathname[0], pathname[1])

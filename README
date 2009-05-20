@@ -1,3 +1,6 @@
+* Warning! make a backup of you problem folders, run once to make certain this 
+script gives you the expected results. *
+
 Add the dropbox-fix-conflicts.py script to you bin, so you can execute it from anywhere.
 Explained: http://nixcraft.com/shell-scripting/13025-how-execute-shell-script-any-where.html
 
